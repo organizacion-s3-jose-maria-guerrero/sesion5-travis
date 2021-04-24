@@ -30,8 +30,8 @@ class CalculatorTest extends TestCase
 
     public function testDivision(): void
     {
-        $result = $this->calculator->division(10, 2);
-        $this->assertEquals(5, $result);
+        $result = $this->calculator->division(12, 2);
+        $this->assertEquals(6, $result);
     }
  
 }
