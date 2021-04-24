@@ -2,7 +2,7 @@
 class Calculator
 {
  
-    public function esPar($a): boolean
+    public function esPar($a): bool
     {
         if($a % 2==0)
 		{		
