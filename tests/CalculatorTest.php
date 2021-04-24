@@ -16,22 +16,11 @@ class CalculatorTest extends TestCase
         $this->calculator = NULL;
     }
  
-    public function testAdd(): void
+    public function testEsPar(): void
     {
-        $result = $this->calculator->add(1, 2);
-        $this->assertEquals(3, $result);
+        $result = $this->calculator->esPar(0);
+        $this->assertEquals(true, $result);
     }
 
-    public function testMultiply(): void
-    {
-        $result = $this->calculator->multiply(5, 2);
-        $this->assertEquals(10, $result);
-    }
-
-    public function testDivision(): void
-    {
-        $result = $this->calculator->division(15, 5);
-        $this->assertEquals(3, $result);
-    }
- 
+   
 }

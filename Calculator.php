@@ -2,19 +2,9 @@
 class Calculator
 {
  
-    public function add($a, $b): float
+    public function esPar($a): boolean
     {
-        return $a + $b;
-    }
-
-    public function multiply($a, $b): float
-    {
-        return $a * $b;
-    }
-
-    public function division($a, $b): float
-    {
-        return $a / $b;
+        return $a % 2;
     }
  
 }
