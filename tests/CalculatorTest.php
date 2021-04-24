@@ -20,6 +20,23 @@ class CalculatorTest extends TestCase
     {
         $result = $this->calculator->esPar(0);
         $this->assertEquals(true, $result);
+		$result = $this->calculator->esPar(1);
+        $this->assertEquals(false, $result);
+		$result = $this->calculator->esPar(2);
+        $this->assertEquals(true, $result);
+		$result = $this->calculator->esPar(3);
+        $this->assertEquals(false, $result);
+		$result = $this->calculator->esPar(-1000);
+        $this->assertEquals(true, $result);
+		$result = $this->calculator->esPar(1000);
+        $this->assertEquals(true, $result);
+		$result = $this->calculator->esPar(-1001);
+        $this->assertEquals(false, $result);
+		$result = $this->calculator->esPar(1001);
+        $this->assertEquals(false, $result);
+   
+   
+   
     }
 
    
