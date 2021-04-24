@@ -4,7 +4,15 @@ class Calculator
  
     public function esPar($a): boolean
     {
-        return $a % 2;
+        if($a % 2==0)
+		{		
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
     }
  
 }
